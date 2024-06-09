@@ -15,5 +15,12 @@ Steps to start this project will be
                     "nodemon server.js"  ( to run the file ) , you can also do "npm start"
     - You will every time you change something the server detects and gives a message "Restarting the server due to changes" and " App crashed " which means 
       there is and error in the file
-    -
+    -For testing the requests we need to use the "POSTMAN" available on the desktop
+    -The postman allows to simulate our requests in other words we need to check whether our requests are being sent and working properly or not 
+
+
+2 - Calling different API endpoints such as GET POST DELETE and PATCH
+
+   -
+
     
