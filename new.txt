@@ -1,0 +1,19 @@
+Steps to start this project will be 
+
+1 - Creating the folders 
+    - create two folder Backend and frontend 
+    - For starting a project the project should start with Backend folder 
+    - create a file called server.js
+    - install packages in this folder for this follow this commands 
+                    "cd Backend"  ( this will take you to that folder)
+                    "npm init -y" (to install packages related to node)
+                    "npm install express" (To install express for routing as in to get requests from the frontend)
+    - Start writing the code in server.js
+    - Now the server file has the code to get the server code and the listening of the server 
+    - do install nodemon to run the file on the browser to install write on the terminal 
+                    "npm install -g nodemon"  (to install the nodemon)
+                    "nodemon server.js"  ( to run the file ) , you can also do "npm start"
+    - You will every time you change something the server detects and gives a message "Restarting the server due to changes" and " App crashed " which means 
+      there is and error in the file
+    -
+    
