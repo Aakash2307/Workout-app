@@ -15,12 +15,24 @@ Steps to start this project will be
                     "nodemon server.js"  ( to run the file ) , you can also do "npm start"
     - You will every time you change something the server detects and gives a message "Restarting the server due to changes" and " App crashed " which means 
       there is and error in the file
+    -create a file called .env write the port no in it also install the env by "npm install dotenv"
     -For testing the requests we need to use the "POSTMAN" available on the desktop
     -The postman allows to simulate our requests in other words we need to check whether our requests are being sent and working properly or not 
 
 
 2 - Calling different API endpoints such as GET POST DELETE and PATCH
 
-   -
+   - Write the endpoints code in the workouts.js and then
+   - connect it with the server.js with 4 different functions which are post ,get , delete and patch(update) 
+   - Test all the functions with the postman app\
+   - Check if all routing are possible or not
+   - just write localhost:4000/ap/workouts and apply different functions and send see whether you are getting the result or 
+   - If not check the server is already on or not as it is necessary to be on 
+   - Save each function in a collection called Mern stack app provided in the left side of the postman app
+
+
+
+3 - Now Connecting the database which is the Mongodb
+   - 
 
     
