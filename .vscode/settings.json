@@ -1,3 +1,11 @@
 {
-  "cSpell.words": ["mssg", "nodemon"]
+  "cSpell.words": [
+    "createworkout",
+    "dotenv",
+    "getworkout",
+    "getworkouts",
+    "Mern",
+    "mssg",
+    "nodemon"
+  ]
 }

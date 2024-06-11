@@ -1,21 +1,28 @@
 const express = require('express')
+// const mongoose = require('mongoose')
 
+const {
+    getworkouts,
+    getworkout,
+    createworkout                                // telling the functions that are actually required 
+} = require('../Controllers/WorkoutController')
 const router = express.Router()
 
-router.get('/',(req,res) => {
-    req.json({mssg: "Get all the workouts"})
-})
 
-router.get('/:id' ,(req,res) =>{
-    res.json({mssg : "GET a single workout"})
-})
+// Get all the workout
+router.get('/',getworkouts)
+
+
+
+// get a single workout
+router.get('/:id' ,getworkout)
 
 
 // POST a new workout
-router.post('/' ,(req,res) =>{
+router.post('/' , createworkout)
     
-    res.json({mssg : "POST a new  workout"})
-})
+   
+
 
 // DELETE a workout 
 router.delete('/:id' ,(req,res) =>{
