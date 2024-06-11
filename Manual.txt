@@ -60,7 +60,14 @@ Steps to start this project will be
     - its like adding one more additional layer between both the server and workouts 
     - The advantage solely goes to the developer who has the independence to change the things independently without affecting the other functions 
     - for this create a folder Controllers and add a file workoutControllers 
-    - The connection goes like server <---> workouts.js(routes folder) <---> workoutControllers.js (Controllers folder) <---> workoutmodels.js(Models folder) 
+    - The connection goes like server <---> workouts.js(routes folder) <---> workoutControllers.js (Controllers folder) <---> workoutmodels.js(Models folder)
+
+
+
+  BY THIS WE HAVE COMPLETED THE BACKEND part
+
+  6 - Starting the frontend 
+      
 
 
   
