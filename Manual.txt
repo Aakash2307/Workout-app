@@ -67,7 +67,7 @@ Steps to start this project will be
   BY THIS WE HAVE COMPLETED THE BACKEND part
 
  
-      
+    "npm install date-fns"
 
 
   

@@ -1,37 +1,36 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react"
+import { useWorkoutsContext } from "../hooks/useWorkoutsContext"
 
-// Components
-import WorkoutDetails from "../components/WorkoutDetails";
-import WorkoutForm from "../components/WorkoutForm";
-
+// components
+import WorkoutDetails from "../components/WorkoutDetails"
+import WorkoutForm from "../components/WorkoutForm"
 
 const Home = () => {
-  const [workouts, setworkouts] = useState([]);
+  const { workouts, dispatch } = useWorkoutsContext()
 
   useEffect(() => {
-    // try to fetch api from the workout
-    const fetchworkouts = async () => {
-      const response = await fetch("/api/workouts");
-      const json = await response.json();
+    const fetchWorkouts = async () => {
+      const response = await fetch('/api/workouts')
+      const json = await response.json()
 
       if (response.ok) {
-        setworkouts(json);
+        dispatch({type: 'SET_WORKOUTS', payload: json})
       }
-    };
+    }
 
-    fetchworkouts();
-  }, []); // this is to make sure that the thing is fired only once
+    fetchWorkouts()
+  }, [dispatch])
+
   return (
     <div className="home">
       <div className="workouts">
-        {workouts &&
-          workouts.map((workout) => (
-            <WorkoutDetails key={workout._id} workout={workout} />
-          ))}
+        {workouts && workouts.map(workout => (
+          <WorkoutDetails workout={workout} key={workout._id} />
+        ))}
       </div>
-      <WorkoutForm/>
+      <WorkoutForm />
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
